@@ -251,11 +251,21 @@ h2 {
 
 }
 
-.fanbase-button {
+.fordian-button {
+    background: #d9ffd9;
+}
 
-  background: #8cff8c;
+.moonshine-button {
+    background: #ffd9d9;
+}
 
-  margin: 0 auto;
+.miggysaurus-button {
+    background: #d9edff;
+}
+
+.zorion-button {
+    background: #ffd9ef;
+}
 
 }
 
