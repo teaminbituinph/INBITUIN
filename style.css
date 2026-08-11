@@ -153,12 +153,25 @@ h2 {
     box-shadow: 5px 5px 10px #5e5d5d;
 }
 
-.fanbase-button,
-.fordian-button,
-.moonshine-button,
-.miggysaurus-button,
+.fanbase-button {
+    margin: 0 auto;
+}
+
+.fordian-button {
+    background: #d9ffd9 !important;
+}
+
+.moonshine-button {
+    background: #ffd9d9 !important;
+}
+
+.miggysaurus-button {
+    background: #d9edff !important;
+}
+
 .zorion-button {
-    background: #fff !important;
+    background: #ffd9ef !important;
+}
 }
 
 hr {
