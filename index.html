@@ -1,0 +1,1709 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>Team Inbituin PH</title>
+
+
+  <meta name="description"
+
+        content="Your one-stop destination for everything about Inbituin and Team Inbituin PH.✨">
+
+
+ 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo&family=Calistoga&display=swap"
+
+        rel="stylesheet">
+
+
+  <link rel="stylesheet"
+
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: auto;
+
+    overflow-y: auto !important;
+
+}
+
+
+body {
+
+    min-width: 100%;
+
+    background: #fff;
+
+    color: #000;
+
+    font-family: "Baloo", cursive;
+
+    overflow-x: hidden !important;
+
+    overflow-y: auto !important;
+
+}
+
+
+.website {
+
+    width: min(1080px, 100%);
+
+    min-height: 100vh;
+
+    height: auto;
+
+    margin: 0 auto;
+
+    padding: 0 40px;
+
+    background: #fff;
+
+}
+
+
+/* Only one section is visible at a time. */
+
+.section {
+
+    display: none;
+
+    min-height: 100vh;
+
+    padding: 25px 0;
+
+    text-align: center;
+
+    animation: fadeIn 0.35s ease-in-out;
+
+}
+
+
+.section.active {
+
+    display: block;
+
+}
+
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+h1,
+
+h2 {
+
+    font-family: "Calistoga", serif;
+
+    font-weight: 400;
+
+}
+
+
+h1 {
+
+    font-size: 3rem;
+
+    margin-bottom: 25px;
+
+}
+
+
+h2 {
+
+    font-size: 2.2rem;
+
+    margin-bottom: 25px;
+
+}
+
+
+.main-logo {
+
+    display: block;
+
+    width: 325px;
+
+    max-width: 100%;
+
+    margin: 0 auto 25px;
+
+}
+
+
+.large-photo {
+
+    display: block;
+
+    width: 260px;
+
+    max-width: 100%;
+
+    margin: 20px auto;
+
+}
+
+
+.fanbase-logo {
+
+    display: block;
+
+    width: 185px;
+
+    height: 185px;
+
+    object-fit: cover;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    border: 2px solid #000;
+
+}
+
+
+.socials {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 15px 0 30px;
+
+}
+
+
+.socials a {
+
+    color: #000;
+
+    font-size: 30px;
+
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+
+}
+
+
+.socials a:hover {
+
+    transform: scale(1.15);
+
+}
+
+
+.buttons {
+
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin: 20px 0 35px;
+
+}
+
+
+.button {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    width: min(675px, 100%);
+
+    min-height: 70px;
+
+    padding: 15px 25px;
+
+    background: #ebe8e8;
+
+    color: #000;
+
+    border: 1px solid #fff;
+
+    border-radius: 18px;
+
+    box-shadow: 3px 3px 8px #5e5d5d;
+
+    font-family: "Baloo", cursive;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 5px 5px 10px #5e5d5d;
+
+}
+
+
+.fanbase-button {
+
+    background: #8cff8c;
+
+    margin: 0 auto;
+
+}
+
+
+/* Home and Back are always centered independently of their parent. */
+
+.back-button {
+
+    display: flex !important;
+
+    justify-content: center !important;
+
+    align-items: center !important;
+
+    width: min(675px, 100%) !important;
+
+    margin: 35px auto 0 !important;
+
+    float: none !important;
+
+}
+
+
+hr {
+
+    width: 100%;
+
+    border: none;
+
+    border-top: 1px solid #000;
+
+    margin: 35px 0;
+
+}
+
+
+.description {
+
+    max-width: 700px;
+
+    margin: 0 auto 30px;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+}
+
+
+.member-info {
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+footer {
+
+    display: none;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .website {
+
+        width: 100%;
+
+        padding: 0 20px;
+
+    }
+
+
+    h1 {
+
+        font-size: 2.2rem;
+
+    }
+
+
+    h2 {
+
+        font-size: 1.8rem;
+
+    }
+
+
+    .button {
+
+        font-size: 20px;
+
+        min-height: 60px;
+
+    }
+
+
+    .main-logo {
+
+        width: 270px;
+
+    }
+
+
+    .fanbase-logo {
+
+        width: 140px;
+
+        height: 140px;
+
+    }
+
+
+    .description {
+
+        font-size: 17px;
+
+    }
+
+}
+
+</style>
+
+
+</head>
+
+
+<body bgcolor="white" align="center">
+
+
+  <main class="website">
+
+
+    <section id="home" class="section">
+
+
+      <img src="inbituin logo.png"
+
+           class="main-logo"
+
+           alt="Inbituin Logo">
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/inbituin.official"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           aria-label="Facebook">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/inbituin.official/"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           aria-label="Instagram">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/inbituinofc"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           aria-label="X">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@inbituin.official"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           aria-label="TikTok">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <div class="buttons">
+
+
+        <a href="#about" class="button">
+
+          About Inbituin
+
+        </a>
+
+
+        <a href="#members" class="button">
+
+          Members Profile
+
+        </a>
+
+
+        <a href="#performances" class="button">
+
+          Performances
+
+        </a>
+
+
+        <a href="#fanbases" class="button">
+
+          Fanbase
+
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+    <section id="about" class="section">
+
+
+      <img src="inbituin photo.png"
+
+           class="large-photo"
+
+           alt="Inbituin">
+
+
+      <h2>
+
+        Who is Inbituin?
+
+      </h2>
+
+
+      <p class="description">
+
+
+        INBITUIN is a 4-member pre-debut genderless P-Pop group
+
+        officially introduced in June 2026. The group aims to showcase
+
+        individuality, artistry, and inclusivity through music and performance.
+
+        As they prepare for their debut, they continue to gain attention
+
+        for their unique concept and talented members.
+
+
+      </p>
+
+
+      <a href="#home" class="button back-button" style="align-items: center;">
+
+        Home
+
+      </a>
+
+
+    </section>
+
+      
+
+    <section id="members" class="section">
+
+
+      <h2>
+
+        Members Profile
+
+      </h2>
+
+
+      <div class="buttons">
+
+
+        <a href="#ford" class="button">
+
+          Ford
+
+        </a>
+
+
+        <a href="#Luna" class="button">
+
+          Luna
+
+        </a>
+
+
+        <a href="#miggy" class="button">
+
+          Miggy
+
+        </a>
+
+
+        <a href="#Zor" class="button">
+
+          Zor
+
+        </a>
+
+
+      </div>
+
+
+      <a href="#home" class="button back-button">
+
+        Home
+
+      </a>
+
+
+    </section>
+
+
+    <section id="ford" class="section">
+
+
+      <img src="ford.png"
+
+           class="fanbase-logo"
+
+           alt="Ford">
+
+
+      <h1>
+
+        Ford
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/peakaaa17"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/inbituin.ford?igsh=MXQ2OHA5cXEzem5oZg=="
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/ford_jus1n"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@fordjustin?_r=1&_t=ZS-98n7usuU1FU"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <p class="member-info">
+
+
+        Birthday: JULY 31<br>
+
+
+        Citizenship: FILIPINO<br>
+
+
+        Position: LEADER, DANCER, RAPPER<br>
+
+
+        Respective Emoji: 🐺
+
+
+      </p>
+
+
+      <a href="#members" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="Luna" class="section">
+
+
+      <img src="luna.png"
+
+           class="fanbase-logo"
+
+           alt="LUNA">
+
+
+      <h1>
+
+        Luna
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.instagram.com/inbituin.luna/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/_tonluna"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@tonluna?_r=1&_t=ZS-98n91wa9NY4"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <p class="member-info">
+
+
+        Birthday: AUGUST 6<br>
+
+
+        Citizenship: : FILIPINO<br>
+
+
+        Position: VOCALIST, DANCER, VISUAL<br>
+
+
+        Respective Emoji: 🐈‍⬛
+
+
+      </p>
+
+
+      <a href="#members" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="miggy" class="section">
+
+
+      <img src="miggy.png"
+
+           class="fanbase-logo"
+
+           alt="Miggy">
+
+
+      <h1>
+
+        Miggy
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/miguelinigoo"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/inbituin.miggy/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/miguelinigo__"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@miguelinigo__?_r=1&_t=ZS-98n99MhuGST"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <p class="member-info">
+
+
+        Birthday: MARCH 26<br>
+
+
+        Citizenship: FILIPINO<br>
+
+
+        Position: RAPPER, DANCER, VOCALIST<br>
+
+
+        Respective Emoji: 🦕
+
+
+      </p>
+
+
+      <a href="#members" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="Zor" class="section">
+
+
+      <img src="zor.png"
+
+           class="fanbase-logo"
+
+           alt="Zor">
+
+
+      <h1>
+
+        ZOR
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/zorblep"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/inbituin.zor/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/zorblep"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@zor.planet?_r=1&_t=ZS-98n9H13cI0j"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <p class="member-info">
+
+
+        Birthday: JULY 10<br>
+
+
+        Citizenship: FILIPINO-SRI LANKAN<br>
+
+
+        Position: VOCALIST, BUNSO<br>
+
+
+        Respective Emoji: 🦇
+
+
+      </p>
+
+
+      <a href="#members" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="performances" class="section">
+
+
+      <h1>
+
+        Performances
+
+      </h1>
+
+
+      <img src="1&Only.png"
+
+           class="large-photo"
+
+           alt="Inbituin Performance">
+
+
+      <div class="buttons">
+
+
+        <a href="https://youtu.be/rmk4OOz_Zg0?si=zch4b_Bztk4AAHCj"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           class="button">
+
+
+          Watch Performance
+
+
+        </a>
+
+
+        <img src="RainOnMe.png"
+
+           class="large-photo"
+
+           alt="Inbituin Performance">
+
+
+      
+
+
+        <a href="https://youtu.be/VKs2Us5jO-8?si=vpvBiYs4709sS5V6"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           class="button">
+
+
+          Watch Performance
+
+
+        </a>
+
+
+        <img src="PinkyUp.png"
+
+           class="large-photo"
+
+           alt="Inbituin Performance">
+
+
+        <a href="https://youtu.be/D4FsKZFdRZI?si=Viym58hH_ob1iAJo"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           class="button">
+
+
+          Watch Performance
+
+
+        </a>
+
+        <img src="lovesickgirls.png"
+
+           class="large-photo"
+
+           alt="Inbituin Performance">
+
+
+        <a href="https://youtu.be/dWIUgTVcbd4?si=j4oWzOWkaiAGYjPV"
+
+           target="_blank"
+
+           rel="noopener noreferrer"
+
+           class="button">
+
+
+          Watch Performance
+
+
+        </a>
+
+      </div>
+
+
+      <a href="#home" class="button back-button">
+
+        Home
+
+      </a>
+
+
+    </section>
+
+
+    <section id="fanbases" class="section">
+
+
+      <h1>
+
+        Solo Fanbases
+
+      </h1>
+
+
+      <div class="buttons">
+
+
+        <a href="#fordians" class="button">
+
+          Fordians Official
+
+        </a>
+
+
+        <a href="#moonshine-official" class="button">
+
+          Moonshines Official
+
+        </a>
+
+
+        <a href="#miggysaurus" class="button">
+
+          Miggysaurus Official
+
+        </a>
+
+
+        <a href="#zorion-official" class="button">
+
+          Zorion Official
+
+        </a>
+
+
+      </div>
+
+
+      <hr>
+
+
+      <a href="#home" class="button back-button">Home</a>
+
+
+    </section>
+
+
+    <section id="fordians" class="section">
+
+
+      <img src="fordians.png"
+
+           class="fanbase-logo"
+
+           alt="Fordians Official">
+
+
+      <h1>
+
+        Fordians Official
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/profile.php?id=61591659986156"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/officialfordians_/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@official_fordians?_r=1&_t=ZS-98nAiju2yYP"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <a href="FORDIANS_MAIN_LINK_HERE"
+
+         target="_blank"
+
+         rel="noopener noreferrer"
+
+         class="button fanbase-button">
+
+
+        FORDIANS Wordplay:
+
+ “For” + “Radiance” 
+<br>
+<br>
+FOR (Purpose): Fans exist for Ford, and Inbituin’s music is created for the fans. It represents a mutual dedication.
+<br>
+<br>
+DIANS (Radiance / Diamonds): The suffix closely mimics words associated with light, like radiance or iridescence. A Fordian is someone who reflects Ford’s light and brings their own brilliance to the fandom. 
+
+
+      </a>
+
+      <br>
+
+      <a style="color: #000;" href="https://m.me/j/AbbxJWT2oz8ThufU/?send_source=gc%3Acopy_invite_link_c">
+      <p style="color: #000;"">OFFICIAL MESSENGER GROUP CHAT</p>
+      </a>
+
+      <a href="#fanbases" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="moonshine-official" class="section">
+
+
+      <img src="moonshines.png"
+
+           class="fanbase-logo"
+
+           alt="Moonshine Official">
+
+
+      <h1>
+
+        Moonshines Official
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/profile.php?id=61591933502564"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/officialmo.onshine/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@official_moon_shines?_r=1&_t=ZS-98nCW7wwQVw"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <a href="MOONSHINE_OFFICIAL_MAIN_LINK_HERE"
+
+         target="_blank"
+
+         rel="noopener noreferrer"
+
+         class="button fanbase-button">
+
+Just like the moon at night, Luna is meant to shine on stage. <br>
+<br>
+But a moon cannot glow without a reflection. As MOONSHINE, we are the light that catches his glow and radiates it back to the world.
+We shine because Luna shines on us–together, we light up the darkest night.🌙✨
+
+
+      </a>
+
+      <br>
+
+      <a style="color: #000;" href="https://ig.me/j/AbZIzKI4VdaOj0ZN/>
+      <p style="color: #000;"">OFFICIAL INSTAGRAM GROUP CHAT</p>
+      </a>
+
+      <a href="#fanbases" class="button back-button">
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="miggysaurus" class="section">
+
+
+      <img src="miggysaurus.png"
+
+           class="fanbase-logo"
+
+           alt="Miggysaurus Official">
+
+
+      <h1>
+
+        Miggysaurus Official
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/profile.php?id=61591846227814"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/miggysaurus_official/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/miggysaurusofc_"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@miggysaurusofc_?_r=1&_t=ZS-98nD3Fdd1d7"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <a href="MIGGYSAURUS_MAIN_LINK_HERE"
+
+         target="_blank"
+
+         rel="noopener noreferrer"
+
+         class="button fanbase-button">
+
+
+        Miggysaurus = Miggy + saurus 🦕 <br>
+        <br>
+“Miggy” comes from his name, while “saurus” is inspired by Brachiosaurus, represented by his dinosaur emoji. It’s a playful name that connects directly to Miggy and his love/association with dinosaurs.
+
+
+      </a>
+
+      <br>
+
+      <a style="color: #000;" href="https://m.me/j/AbZakZTh4Otxmq6Q/?send_source=gc%3Acopy_invite_link_c">
+      <p style="color: #000;"">OFFICIAL MESSENGER GROUP CHAT</p>
+      </a>
+
+      <a href="#fanbases" class="button back-button" >
+
+        Back
+
+      </a>
+
+
+    </section>
+
+
+    <section id="zorion-official" class="section">
+
+
+      <img src="zorion.png"
+
+           class="fanbase-logo"
+
+           alt="Zorion Official">
+
+
+      <h1>
+
+        Zorion Official
+
+      </h1>
+
+
+      <div class="socials">
+
+
+        <a href="https://www.facebook.com/profile.php?id=61578169558147"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-facebook"></i>
+
+
+        </a>
+
+
+        <a href="https://www.instagram.com/zorion_official/"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-instagram"></i>
+
+
+        </a>
+
+
+        <a href="https://x.com/zorion_official"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-x-twitter"></i>
+
+
+        </a>
+
+
+        <a href="https://www.tiktok.com/@official_zorion?_r=1&_t=ZS-98nDTUqbC3I"
+
+           target="_blank"
+
+           rel="noopener noreferrer">
+
+
+          <i class="fa-brands fa-tiktok"></i>
+
+
+        </a>
+
+
+      </div>
+
+
+      <a href="ZORION_OFFICIAL_MAIN_LINK_HERE"
+
+         target="_blank"
+
+         rel="noopener noreferrer"
+
+         class="button fanbase-button">
+
+
+        ZORION comes from Zor + Orion <br>
+        <br>
+        Orion is a constellation made up of stars, just like how Zor has his own stars—ZORION. Together, we shine brighter, light up the stage, and create our own little universe. 
+
+
+      </a>
+
+
+      <a href="#fanbases" class="button back-button">
+
+        Back
+
+      </a>
+
+       <br>
+
+      <a style="color: #000;" href="https://m.me/j/AbY8ApuM9gOyUwgu/?send_source=gc%3Acopy_invite_link_c">
+      <p style="color: #000;"">OFFICIAL MESSENGER GROUP CHAT</p>
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+</main>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const sections = document.querySelectorAll(".section");
+
+
+    function showSection(id) {
+
+        const target = document.getElementById(id);
+
+        if (!target) return;
+
+
+        sections.forEach(function (section) {
+
+            section.classList.remove("active");
+
+        });
+
+
+        target.classList.add("active");
+
+
+    }
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+
+        link.addEventListener("click", function (event) {
+
+            const id = this.getAttribute("href").substring(1);
+
+
+            if (document.getElementById(id)) {
+
+                event.preventDefault();
+
+                showSection(id);
+
+            }
+
+        });
+
+    });
+
+
+    
+
+    showSection("home");
+
+});
+
+</script>
+
+
+<footer>@2026 Team Inbituin PH</footer>
+
+
+</body>
+
+
+</html>
