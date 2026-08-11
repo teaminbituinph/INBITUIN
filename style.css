@@ -12,6 +12,7 @@
 
 .back-container .back-button {
     margin: 35px auto 0 !important;
+    align-items: center;
 }
 
 html {
